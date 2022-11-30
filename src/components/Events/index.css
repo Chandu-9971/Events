@@ -1,0 +1,23 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.card-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  background-color: #64748b;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 32px;
+  color: #ffffff;
+  justify-content: flex-start;
+}
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
