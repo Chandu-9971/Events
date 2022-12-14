@@ -9,7 +9,7 @@ const registrationStatus = {
 const ActiveEventRegistrationDetails = props => {
   const {activeEventRegistrationStatus} = props
 
-  const renderNoActiveEventsView = () => (
+  const renderNoActiveEventView = () => (
     <p className="no-active-event-description">
       Click on an event, to view its registration details
     </p>
@@ -71,7 +71,7 @@ const ActiveEventRegistrationDetails = props => {
       case registrationStatus.registrationsClosed:
         return renderRegistrationsClosedView()
       default:
-        return renderNoActiveEventsView()
+        return renderNoActiveEventView()
     }
   }
 

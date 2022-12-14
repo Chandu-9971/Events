@@ -1,9 +1,9 @@
 import './index.css'
 
-const eventItem = props => {
+const EventItem = props => {
   const {eventDetails, isActive, setActiveEventId} = props
   const {imageUrl, name, location, id} = eventDetails
-  const eventImageClassName = isActive ? `event-image active` : `event-image`
+  const eventImageClassName = isActive ? 'event-image active' : 'event-image'
 
   const onClickEvent = () => {
     setActiveEventId(id)
@@ -20,4 +20,4 @@ const eventItem = props => {
   )
 }
 
-export default eventItem
+export default EventItem
